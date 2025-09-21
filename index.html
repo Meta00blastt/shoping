@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub - Your Style Destination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fashion Hub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Welcome to Fashion Hub</h1>
+                <p>Discover the latest trends in fashion. From casual wear to formal attire, we have everything you need to express your unique style.</p>
+            </div>
+        </section>
+
+        <section class="gender-selection" id="gender-selection">
+            <div class="container">
+                <h2 class="section-title">Choose Your Style</h2>
+                <div class="gender-cards">
+                    <div class="gender-card" onclick="showCategories('male')">
+                        <div class="gender-icon">👨</div>
+                        <h3>Men's Fashion</h3>
+                        <p>Explore our collection of stylish men's clothing</p>
+                    </div>
+                    <div class="gender-card" onclick="showCategories('female')">
+                        <div class="gender-icon">👩</div>
+                        <h3>Women's Fashion</h3>
+                        <p>Discover elegant and trendy women's wear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="container">
+                <button class="back-btn" onclick="goBack()">← Back to Gender Selection</button>
+                <h2 class="section-title" id="category-title">Choose Category</h2>
+                <div class="category-grid" id="category-grid">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fashion Hub. All rights reserved. | Designed with ❤️ for fashion lovers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
